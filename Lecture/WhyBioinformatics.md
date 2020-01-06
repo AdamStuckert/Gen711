@@ -156,18 +156,24 @@ grep -v "^>" DNAseq.fa | wc -c
 How many "A"s are there in this DNA sequence?
 
 ```bash
-ADD CODE
+cat DNAseq.fa | tr -cd "A" | wc -c
 ```
 
 What is the RNA sequence (ie, transcribe the DNA)?
 
 ```bash
-ADD CODE
+cat DNAseq.fa | sed "s/T/U/g"
 ```
 
 Finally lets identify this gene. The potential genes I gave you are in the file `Possiblegenes.fa`.
 
 ```bash
-makeblastdb 
+# first make the blast database (what you will search through)
+makeblastdb -in Possiblegenes.fa -dbtype nucl
 
+# now search for our gene within that database
+blastn -query DNAseq.fa -db Possiblegenes.fa -out blastsearch.txt
+
+# view results 
+cat blastsearch.txt
 ```
