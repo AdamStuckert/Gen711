@@ -141,3 +141,33 @@ TCATTCTACCTTAATTCATGAACTGCAAAACTCTCATCTAGCTTTTTACTTCTCTAGCTATTGCTTTAAG
 TTCTATCAGGCTCAGGTGTGGAATTCTCTCAGTTACAATATTCGATTTGTTATATAGCATTACTTGATGC
 ```
 
+## How much did that suck? And how poorly did we all do?!
+
+## Now we will do this bioinformatically!
+
+Our initial DNA sequence is in a file called `DNAseq.fa`. We can use this to answer the above questions.
+
+How many total nucleotides are there?
+
+```bash
+grep -v "^>" DNAseq.fa | wc -c
+```
+
+How many "A"s are there in this DNA sequence?
+
+```bash
+ADD CODE
+```
+
+What is the RNA sequence (ie, transcribe the DNA)?
+
+```bash
+ADD CODE
+```
+
+Finally lets identify this gene.
+
+```bash
+makeblastdb 
+
+```
