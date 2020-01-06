@@ -47,6 +47,60 @@ Your terminal will then prompt you to provide your login information. If you are
 * `cp` copy a file
 * `man` gives information about a program. This is very useful.
 
+
+## LAB ASSIGNMENT
+
 ### Practice some basic commands
 
+1. What does this command do?
+
+```bash
+pwd
+```
+
+2. The `ls` command lists files and folders in your present directory. Try both `ls -lt` and `ls -lht`. What is the difference between these commands. 
+
+3. Create a new directory named `first_dir`. What command did you use to do this?
+
+4. Next we will move into your new directory. What command would you use to do this?
+
+5. Now we will create a new file using a text editor called `nano`. Typing the nano command opens up the editor. I want you to save the following as your file text. In order to do this copy it from this page and paste it in to `nano` using a right click. 
+
+```
+Hello world!
+This is my first ever text file.
+It has a number of words.
+And a number of lines.
+It is pretty neat.
+But a bird in a tree is better
+```
+
+Once you have pasted this in, save it as `firstfile.txt`:
+
+```bash
+ctrl + x / cmnd + x # to close
+y  # y to save edits, n to exit without saving edits
+firstfile.txt # whatever you type here will be the file name
+```
+
+6. What if you forgot what was in this file, or this is a file that someone else gave you and you had no idea what it was? There are a variety of ways to view files. Try `cat`, `head`, `tail`, `less`, and `more`. For each of these you have to specify the filename second (e.g., ` cat firstfile.txt`). What is the difference between `cat` and `head`?
+
+7. Make a copy of your file, then remove the original.
+
+```bash
+cp firstfile.txt 2ndfile.txt # make copy
+ls -lht # view contents of your directory to see new file
+rm firstfile.txt # remove original
+ls -lht
+```
+
+Now try moving the file.
+
+```bash
+mv 2ndfile.txt firstfile.txt
+```
+
+What is the difference between `cp` and `mv`?
+
+8. We did quite a lot today! Try using `history` to see all the commands you typed today.
 
