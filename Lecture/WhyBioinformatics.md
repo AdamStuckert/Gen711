@@ -165,7 +165,7 @@ What is the RNA sequence (ie, transcribe the DNA)?
 ADD CODE
 ```
 
-Finally lets identify this gene.
+Finally lets identify this gene. The potential genes I gave you are in the file `Possiblegenes.fa`.
 
 ```bash
 makeblastdb 
