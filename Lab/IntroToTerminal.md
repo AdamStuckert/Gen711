@@ -4,7 +4,7 @@ One of the most fundamental parts of bioinformatics is a basic familiarity with 
 
 ### Basic Linux rules
 
-*Everything is case sensitive. Gen711 is not the same as gen711.
+* Everything is case sensitive. Gen711 is not the same as gen711.
 
 *Spaces in file names should be avoided. Spaces are a special character (represented as `\s`) and thus make things wacky. 
 
@@ -38,7 +38,6 @@ Your terminal will then prompt you to provide your login information. If you are
 
 ### Basic commands
 *`pwd` print working directory
-
 * `ls` list directory contents
 
 * `nano` open up a text editor
