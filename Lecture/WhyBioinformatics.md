@@ -177,3 +177,7 @@ blastn -query DNAseq.fa -db Possiblegenes.fa -out blastsearch.txt
 # view results 
 cat blastsearch.txt
 ```
+
+## WOW, so much easier right???
+
+Imagine trying to do a lot of genomic work by hand. Remember the human genome contains approximately 3 *BILLION* base pairs...
