@@ -52,11 +52,15 @@ Your terminal will then prompt you to provide your login information. If you are
 
 ### Practice some basic commands
 
-1. What does this command do?
+This section is your `homework` for the day. You can (and should) get details on these commands using `man` as you go so that you can learn their uses. 
+
+1. What does this command do? 
 
 ```bash
 pwd
 ```
+
+Learn more using `man pwd`.
 
 2. The `ls` command lists files and folders in your present directory. Try both `ls -lt` and `ls -lht`. What is the difference between these commands. 
 
@@ -104,3 +108,4 @@ What is the difference between `cp` and `mv`?
 
 8. We did quite a lot today! Try using `history` to see all the commands you typed today.
 
+For more information on some of these commands, and to learn some new and useful ones, take a look at [this website](http://swcarpentry.github.io/2014-08-21-upenn/novice/ref/01-shell.html).
