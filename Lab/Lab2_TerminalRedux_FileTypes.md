@@ -96,3 +96,5 @@ Multi fasta files are the same format as a 'regular' fasta file. However, they c
 **Question 8:** What command would you use to count the number of proteins in this file? How many proteins are there?
 
 
+### Fastq files
+
