@@ -68,3 +68,31 @@ grep "theory" darwin_chapter.txt | wc -l
 
 **Question 4:** Why might counting the number of times Darwin used theory in this way be problematic and imprecise?
 
+### FASTA files
+
+The FASTA format is a common file format that is used for storing DNA, RNA or Protein sequences. FASTA files begin with a header line starting with ‘>’ that contains text information of the sequence and often an identifier such as the genbank ID (NM_004985.3).  The subsequent lines contain the DNA, RNA or Protein sequence.  Genomic, transcriptomic, and proteomic assemblies will come in this format. FASTA files usually end with the `*.fa` or `*.fasta` extension.
+
+Let’s examine the FASTA file for the KRAS gene
+```bash
+more kras.fa
+```
+
+**Question 5:** how many lines are in this fasta file?
+
+Remember the first day of class when we counted nucleotides? It was awful. We can use commands we have already learned in order to count the total number of nucleotides easily! `grep` has a flag (flags are used to specify parameters to a command) that allows us to find the inverse of a search. We can combine that with `wc` to count the total number of characters using the `-c` or count flag.
+
+```bash
+grep -v ">" kras.fa | wc -c
+```
+
+**Question 6:** how many total characters are in this fasta file?
+
+**Question 7:** how many total nucleotides are in this fasta file?
+
+### Multi FASTA files
+
+Multi fasta files are the same format as a 'regular' fasta file. However, they contain >1 (usually many more) individual sequences. Each sequence is denoted by the header identifier `>`. The zipped directory you downloaded has a multi fasta file (often referred to as just a fasta file) of protein sequences called `human.pep.fa.gz`. Each character within the sequence is a single amino acid. Because these files can be very large, many times they are compressed using the program `gzip` to save time downloading and disk space. Gzipped files are denoted with `.gz`. 
+
+**Question 8:** What command would you use to count the number of proteins in this file? How many proteins are there?
+
+
