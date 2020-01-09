@@ -98,3 +98,4 @@ Multi fasta files are the same format as a 'regular' fasta file. However, they c
 
 ### Fastq files
 
+Fastq files are the most common modern format for storing sequencing reads. FASTA and FASTQ are rather similar, but FASTQ is almost always used for storing sequencing reads and contains associated quality values foe each nucleotide. 
