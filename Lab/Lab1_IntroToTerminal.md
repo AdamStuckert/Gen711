@@ -1,8 +1,8 @@
-# Intro to terminal and Linux
+# Intro to terminal and Unix
 
 One of the most fundamental parts of bioinformatics is a basic familiarity with the command line. Many things are Linux and bash based, so these are good skills to develop. 
 
-### Basic Linux rules
+### Basic Unix rules
 
 * Everything is case sensitive. Gen711 is not the same as gen711.
 
