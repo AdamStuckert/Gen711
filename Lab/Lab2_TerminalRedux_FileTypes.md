@@ -1,5 +1,6 @@
-## Intro to terminal continued
-
+<p align="center">
+ ## Intro to terminal continued
+</p>
 For today's lab we will continue our introduction to basic Unix and working in the terminal. We will also begin to work with common file types used in genomics and bioinformatics. You will see many of these file types as you use them throughout your bioinformatical career, whether that lasts for the length of this class or a lifetime.
 
 **Programming note:** _ba dum tss!_
