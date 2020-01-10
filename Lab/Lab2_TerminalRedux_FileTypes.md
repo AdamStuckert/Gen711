@@ -1,6 +1,5 @@
-<p align="center">
-**Intro to terminal continued**
-</p>
+## Intro to terminal continued
+
 For today's lab we will continue our introduction to basic Unix and working in the terminal. We will also begin to work with common file types used in genomics and bioinformatics. You will see many of these file types as you use them throughout your bioinformatical career, whether that lasts for the length of this class or a lifetime.
 
 **Programming note:** _ba dum tss!_
@@ -99,4 +98,13 @@ Multi fasta files are the same format as a 'regular' fasta file. However, they c
 
 ### Fastq files
 
-Fastq files are the most common modern format for storing sequencing reads. FASTA and FASTQ are rather similar, but FASTQ is almost always used for storing sequencing reads and contains associated quality values foe each nucleotide. 
+Fastq files are the most common modern format for storing sequencing reads. FASTA and FASTQ are rather similar, but FASTQ is almost always used for storing sequencing reads and contains associated quality values for each nucleotide. A single read in a FASTQ file is spread across four lines:
+
+1. `@` followed by the read name
+2. Nucleotide sequence
+3. `+` followed by information in some cases (largely ignored information)
+4. Quality scores for each nucleotide
+
+FASTQ files usually have the extension `.fq` or `.fastq`. We will discuss these more in the lecture section of class.
+
+Take a look at the fastq example in your downloaded zip directory (`example.fq`). **Question 9:** What command would you use to count the number of nucleotides in this file? How many are there?
