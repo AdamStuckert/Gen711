@@ -34,7 +34,7 @@ Once you have these installed, we can access your Ron account and get you rollin
 ssh your_username@ron.sr.unh.edu
 ```
 
-Your terminal will then prompt you to provide your login information. If you are using PuTTY, you can save the username and IP address and load the connection without the command line.
+Your terminal will then prompt you to provide your login information. You should have received an email with your login information. Once you login, you will be asked to change your password.  **Remember this new password!** If you are using PuTTY, you can save the username and IP address and load the connection without the command line.
 
 ### Basic commands
 * `pwd` print working directory
