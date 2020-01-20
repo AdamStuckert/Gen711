@@ -2,7 +2,9 @@
 
 ## We will start with an introduction to the importance of bioinformatics in genetics, genomics, and organismal biology
 
-Let's say we want to do something easy. How many total nucleotides are in this string of DNA from a mouse?
+Let's say we want to do something easy. 
+
+**Question 1:** How many total nucleotides are in this string of DNA from a mouse?
 
 ```
 AGTCCTTGAGCCCCTGCAGCCTCAGAAGAGGGAGTCATCAGCTGAAACCTCCAGGAACCACCGGGGGTCC
@@ -19,9 +21,11 @@ CAGCTCTCCTGGGGTTAACTTGCTGAGGGGCTAGGATGAGGAAAACCAGATCTTCCTAGGCTGCAGCTCA
 
 Now, how many instances of Adenine (A) are there in this same segment of DNA?
 
-What about if we are interested in transcribing this into RNA? Please do this.
+**Question 2:** What about if we are interested in transcribing this into RNA? Please do this.
 
 Finally, lets identify this section of the genome! We know this is a mouse, so as an exercise I will just give you a few mouse genes that this could be.
+
+**Question 3:** Which gene is our DNA sequence?
 
 Gene 1, agouti signalling protein:
 ```
