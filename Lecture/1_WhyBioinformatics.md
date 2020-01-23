@@ -160,7 +160,7 @@ grep -v "^>" DNAseq.fa | wc -c
 How many "A"s are there in this DNA sequence?
 
 ```bash
-cat DNAseq.fa | tr -cd "A" | wc -c
+grep -v "^>" DNAseq.fa | tr -cd "A" | wc -c
 ```
 
 What is the RNA sequence (ie, transcribe the DNA)?
