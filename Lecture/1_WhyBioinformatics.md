@@ -154,7 +154,7 @@ Our initial DNA sequence is in a file called `DNAseq.fa`. We can use this to ans
 How many total nucleotides are there?
 
 ```bash
-grep -v "^>" DNAseq.fa | wc -c
+grep -v "^>" DNAseq.fa | tr -d \\n | wc -c
 ```
 
 How many "A"s are there in this DNA sequence?
