@@ -112,7 +112,7 @@ We want to make the blast database from a combination of these four rodent files
 
 #### BLASTing
 
-Now we can built the database blast will use for searching using the command `makeblastdb`.
+Now we can build the database blast will use for searching using the command `makeblastdb`.
 Notice the flags just like we've been using with `grep` and other programs. In this case, they are pretty informative, but that isn't always true.
 `-in` is where you should put the input file - this is the file you made in question 3, above. Make sure you type in whatever you named your final file in that step.
 `-out` is what you want your output files to be called. There will be a few of them, so no need to give them a file extension.
