@@ -43,8 +43,7 @@ The first few commands we will use start with "sudo" - this is telling the compu
 
 **Question 1:** What happens when you run the first command without the "sudo" at the beginning?
 
-Be careful with `sudo`! Having privileges on a computer means lots of opportunities to mess things up or delete things that are important.
-Best to use it only on these instances where we can always terminate the instance and start over.
+Be careful with `sudo`! Having privileges on a computer means lots of opportunities to mess things up or delete things that are important. It is pretty rare that you will have these privileges on a computer, or you could get into trouble for trying them, so don't just go around sudoing things. Best to use it only on these instances where we can always terminate the instance and start over.
 
 First we need to check the server for updates to existing software
 > sudo apt-get update
