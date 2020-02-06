@@ -103,6 +103,7 @@ Look these guys up if you don't know what they are. Aren't rodents adorable?
 
 Now, go ahead and decompress all the files you just downloaded. This is similar to last week, but they are compressed a little bit differently, so we'll use this command instead.
 > gzip -d Mus_musculus.GRCm38.cdna.all.fa.gz
+
 **do this for each of the four rodent files you just downloaded**
 
 We want to make the blast database from a combination of these four rodent files, but blast will only take one file! 
