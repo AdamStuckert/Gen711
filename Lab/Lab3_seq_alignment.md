@@ -117,7 +117,7 @@ Notice the flags just like we've been using with `grep` and other programs. In t
 `-in` is where you should put the input file - this is the file you made in question 3, above. Make sure you type in whatever you named your final file in that step.
 `-out` is what you want your output files to be called. There will be a few of them, so no need to give them a file extension.
 `-dbtype` is the type of database, in our case, nucleotide, but you could also do a protein one if that fit your data or question better.
-> makeblastdb -in all_ref_rodents.fa -out mus -dbtype nucl
+> makeblastdb -in all_ref_rodents.fa -out rodent -dbtype nucl
 
 This will take just a little while (mine took 14.1483 seconds) so be patient.
 
