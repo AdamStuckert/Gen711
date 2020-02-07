@@ -158,3 +158,4 @@ Take a look at the mystery rodent transcripts in this alignment.
 **Question 10:** What do you notice about how 18641 compares to the other mystery rodent transcripts? What do you conclude about these transcripts based on this observation?
 
  
+ # Remember to terminate your instance when you are finished!
