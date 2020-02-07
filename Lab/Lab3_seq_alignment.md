@@ -159,3 +159,7 @@ Take a look at the mystery rodent transcripts in this alignment.
 
  
  # Remember to terminate your instance when you are finished!
+ 
+ 
+ 
+ >awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' good_mus_unique.fasta > fixed_good_mus_unique.fasta
