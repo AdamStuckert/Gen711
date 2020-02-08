@@ -1,5 +1,7 @@
 # Lab 3 - Sequence Alignment
 
+Log onto Ron (we'll use jetstream next week).
+
 In this lab we are going to take some unknown transcripts (quite a few of them) and figure out what they are. We will do this by blasting them against a set of references that have known sequences in them. Then we will take all the sequences that code for a certain gene (some of which we will find from blasting and some of which we will pull out of the known sequences) and do a multiple sequence alignment in MAFFT. We'll visualize the alignment using an online program at the end.
 
 **Question 1** has been postponed until next week!
