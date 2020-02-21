@@ -118,13 +118,21 @@ wget https://raw.githubusercontent.com/AdamStuckert/Gen711/master/Lab/Files/Tari
 wget https://raw.githubusercontent.com/AdamStuckert/Gen711/master/Lab/Files/Taricha_granulosa_subsampled.2.fq
 ```
 
-# check everything exists!
+Check everything exists!
+
+```
 ls -lht
+```
 
-# activate a conda environment
+Activate a conda environment
+
+```
 conda activate orp
+```
 
-# run the protocol...
+Run the protocol...
+
+```
 $HOME/Oyster_River_Protocol/oyster.mk \
 STRAND=RF \
 MEM=15 \
@@ -132,6 +140,7 @@ CPU=9 \
 READ1=Taricha_granulosa_subsampled.1.fq \
 READ2=Taricha_granulosa_subsampled.2.fq \
 RUNOUT=newt
+```
 
 **Question 6:** how do the BUSCO scores compare between the assemblies?
 
