@@ -17,7 +17,7 @@ echo ". /usr/anaconda/install/etc/profile.d/conda.sh" >> ~/.bashrc
 source ~/.bashrc
 ```
 
-Next, activate the conda environment I created for today's lab. You did this last week, but you produced your own. List all the available conda environments with `conda info --envs`. You'll see two environments, one is base and the other is the one I created. Load the environment that is listed with 
+Next, activate the conda environment I created for today's lab. You did this last week, but you produced your own. List all the available conda environments with `conda info --envs`. You'll see two environments, one is base and the other is the one I created. Load the environment that is listed with `conda info --envs`.
 
 ```bash
 conda activate ENVIRONMENT # replace ENVRIONMENT with the name
