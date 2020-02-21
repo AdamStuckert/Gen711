@@ -142,6 +142,8 @@ READ2=Taricha_granulosa_subsampled.2.fq \
 RUNOUT=newt
 ```
 
+Ok, so jetstream is interpreting these all as separate lines. So to make your life easier, you can just paste this into a text editor (NOT Word!!) and then make it a single line. Paste that in. Or just type it all! It will give you the full life experience :)
+
 **Question 6:** how do the BUSCO scores compare between the assemblies?
 
 **Question 7:** how do the transrate scores compare between the assemblies?
