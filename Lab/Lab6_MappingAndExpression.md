@@ -1,6 +1,6 @@
-### Mapping and expression of RNA seq data
+## Mapping and expression of RNA seq data
 
-## Mapping
+### Mapping
 
 For today's lab we can use the same image we ran last week (`Ubuntu 18.04 Devel and Docker`). I tested this on a `m1.large` instance.
 
