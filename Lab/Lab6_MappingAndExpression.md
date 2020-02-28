@@ -132,7 +132,7 @@ Find out the web address of your server. Paste the web address that comes up on 
 echo My RStudio Web server is running at: http://$(hostname):8787/
 ```
 
-Make a password (make it an easy one!!!)
+Make a password (make it an easy one!!!). Type this command **exactly as is in your terminal.** After you do this it will prompt you for a password, which you will enter twice. 
 
 ```
 sudo passwd $(whoami)
