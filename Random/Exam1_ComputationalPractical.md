@@ -8,6 +8,7 @@ very important note: We have created an image for you with all of the requisite 
 ```
 INSTANCE: GEN711_exam1practical
 SIZE: m1.xlarge
+```
 
 
 Remember that to connect to your instance you will need to use the command `ssh -i jetkey USERNAME@INSTANCEIPADDRESS`. Obvioulsy fill in your username + ip address accordingly.
