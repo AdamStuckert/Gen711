@@ -10,7 +10,7 @@ One major note here, do all of this through Ron instead of your computer. This a
 4. Post a screenshot of your first commit.
 5. Post a screenshot of your newly initiated repo (the second one you did via the GitHub website). Hint: the green new repo button seems to be in the top left of the main GitHub page now.
 
-Step 5 note: The command `git checkout -b <my branch name>` can be used to either 1) create a new branch (as you used it) or 2) to switch to that branch and examine it.
+Step 5 note: The command `git checkout -b <my branch name>` can be used to either 1) create a new branch (as you used it) or 2) to switch to that branch and examine it via `git checkout <my branch name>`.
 
 Step 6 hint: you can copy the code you need via the button to the right of **..or push an existing repository from the command line**
 
