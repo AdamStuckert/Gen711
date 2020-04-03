@@ -111,3 +111,7 @@ populations -P ./stacks_out -t 24 -M ./poplist.tab --fstats
 ```
 
 **Question 7:** What is the Fst between populations in this study?
+
+**Question 8:** What do you think this means about these two color morphs? Are they genetically similar or dissimilar? Why do you think this? Note: you may have to watch the pop gen lectures and/or read up on Fst values in order to answer this!
+
+**Question 9:** Lastly, Ron has limited space and is a teaching resource. Please be good stewards and clean up by removing all the reads in your folder. Post a screenshot which shows the contents of your `reads` and `processed_reads` directories.
