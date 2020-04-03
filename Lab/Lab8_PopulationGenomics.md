@@ -32,7 +32,7 @@ cd ..
 
 There are a few programs that people use to analyze RADseq data, most notably Stacks and ipyrad. For this lab we will be using Stacks. What Stacks does is assemble data from reads into "stacks" of reads that align (hence the name). Conveniently, Stacks can run both to a genome as well as produce these stacks de novo. So you can utilize extant genomic resources for your species of interest, but if those don't exist you can still examine RADseq data in Stacks. 
 
-There is a conda environment for Stacks on Ron. Activate it. **Question 2 :** What is the name of this environment?
+There is a conda environment for Stacks on Ron. Activate it using `source activate` instead of `conda activate` as in previous labs. **Question 2 :** What is the name of this environment?
 
 
 
