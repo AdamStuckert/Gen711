@@ -23,10 +23,12 @@ OK, background over, time to do some population genomics.
 mkdir reads
 cd reads
 svn checkout https://github.com/AdamStuckert/Gen711/trunk/Lab/Files/RAD_data
+# move all the reads out of that folder into reads
+mv RAD_data/*gz .
 cd ..
 ```
 
-**Question 1: ** How many reads are they, and how many reads do they each have?
+**Question 1:** How many reads are they, and how many reads do they each have? If you are using `grep`, there is an equivalent version that allows use of gzipped files called `zgrep`.
 
 There are a few programs that people use to analyze RADseq data, most notably Stacks and ipyrad. For this lab we will be using Stacks. What Stacks does is assemble data from reads into "stacks" of reads that align (hence the name). Conveniently, Stacks can run both to a genome as well as produce these stacks de novo. So you can utilize extant genomic resources for your species of interest, but if those don't exist you can still examine RADseq data in Stacks. 
 
@@ -43,7 +45,7 @@ mkdir processed_reads
 process_radtags -p ./reads/ --paired  -i gzfastq -o ./processed_reads/ --renz_1 sbfI --renz_2 claI 
 ```
 
-**Question 3:** What do the parameters `--renz_1` and `--renz_2` refer to? Why are they important for this process?
+**Question 3:** What do the parameters `--renz_1` and `--renz_2` refer to? Why are they important for this process? Stacks documentation: http://catchenlab.life.illinois.edu/stacks/manual
 
 
 Stacks can calculate a variety of population genetics metrics between populations. In order to do this we have to specify populations. In this case we have 2 populations of frogs, each of which represents a color morph of our poison frog. Each read is named in a way to give us lots of information about the sample, including year collected, locality, and individual number. **Question 4:** What format are reads in, and if you had to guess what do you think the different parts of the read names refer to?
@@ -57,7 +59,7 @@ PO == Pongo == yellow striped morph
 
 ```bash
 # make the population list...
-inds=$(basename -a processed_reads/*R1_001.1.fq | sed "s/_R1_001.1.fq//g")
+inds=$(basename -a processed_reads/*R1_001.1.fq.gz | sed "s/_R1_001.1.fq.gz//g")
 
 for ind in $inds
 do
