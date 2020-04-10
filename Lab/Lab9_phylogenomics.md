@@ -77,7 +77,7 @@ And finally, we will use a program called iqtree to make the tree. Iqtree has a 
 - `-bb` tells iqtree that we want to do some rapid bootstrapping of our tree, and how many subsets to take  
 - `-pre` is the prefix of all the output files - iqtree will produce a number of files, and this will be the beginning of all of them   
 
-    iqtree -s input -m LG -bb 1000 -pre output  
+    `iqtree -s input -m LG -bb 1000 -pre output`  
 
 
 ### Viewing the tree  
