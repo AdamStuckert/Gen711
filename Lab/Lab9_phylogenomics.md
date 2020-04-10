@@ -16,8 +16,8 @@ Go ahead and log onto your Ron account.
 
 Let's make a new directory for this lab so that your files won't be in with everything else.  
 
-    `mkdir phylo_lab`  
-    `cd phylo_lab`
+    mkdir phylo_lab  
+    cd phylo_lab
 
 Since the genomes and protein sets they have on Ensembl are already annotated with the sequence identities, they are a great place to start for a tree like this. We are going to be working with rodents again, mostly because they are easy to find, pretty diverse, and ensembl has a LOT of them.  
 
@@ -45,7 +45,7 @@ Next, go ahead and unzip all these files using the `gzip -d` command.
 
 These files (annoyingly) have sequences that are wrapped - meaning they are not all on one line in the file. We will have to unwrap them before we move on. Below is the code you will need to do the first file; make sure you do this to all of them.  
 
-    `awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' Castor_canadensis.C.can_genome_v1.0.pep.all.fa > beaver_unwrap.fa`  
+    awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' Castor_canadensis.C.can_genome_v1.0.pep.all.fa > beaver_unwrap.fa  
 
 
 
@@ -57,7 +57,7 @@ Now that we have the data downloaded and its formatting changed, we are ready to
 
 Take a look at one of these files. There is a lot of information in each of the headers, but most of it is no longer very useful to us. What we *do* want in the headers is a really clear species name, so that we'll be able to tell which sequence is which on the tree later. The command below will change the header of a fasta file; do this to all of the sonic hedgehog files. Note: this works for mine because this is what my file was called - make sure you change the input and output file names to match what you want yours to be called.  
 
-    `awk '/^>/{print ">beaver_" ++i; next}{print}' beaver_sonic.fa > header_beaver_sonic.fa`  
+    awk '/^>/{print ">beaver_" ++i; next}{print}' beaver_sonic.fa > header_beaver_sonic.fa  
 
 
 **Question 3:** When you have all of your headers edited appropriately, combine all of those files together. The file you end up with should be a single fasta file with all of the sequences for the sonic hedgehog gene, and all of the headers simple and informative. Paste in the code you used to do this.  
@@ -67,7 +67,7 @@ Take a look at one of these files. There is a lot of information in each of the 
 
 We'll use mafft again with the default settings for the multiple sequence alignment. Put your own input and output file names in the appropriate places.  
 
-    `mafft --auto input.fa > output.fa`  
+    mafft --auto input.fa > output.fa  
 
 
 And finally, we will use a program called iqtree to make the tree. Iqtree has a **LOT** of options, but we will try to keep things relatively simple for today. Your output file from the last command will be your input file for this one.  
@@ -77,7 +77,7 @@ And finally, we will use a program called iqtree to make the tree. Iqtree has a 
 - `-bb` tells iqtree that we want to do some rapid bootstrapping of our tree, and how many subsets to take  
 - `-pre` is the prefix of all the output files - iqtree will produce a number of files, and this will be the beginning of all of them   
 
-    `iqtree -s input -m LG -bb 1000 -pre output`  
+    iqtree -s input -m LG -bb 1000 -pre output  
 
 
 #### Viewing the tree  
