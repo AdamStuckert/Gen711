@@ -10,7 +10,7 @@ I just downloaded the latest version because I hadn't updated mine in a while, a
 If this does not work for you, or for whatever reason you are unable to do this, please let me know and we'll find an alternative. On to the lab!  
 
 
-#### First, we need data
+### First, we need data
 
 Go ahead and log onto your Ron account.  
 
@@ -49,7 +49,7 @@ These files (annoyingly) have sequences that are wrapped - meaning they are not 
 
 
 
-#### Pulling out the sequences we want  
+### Pulling out the sequences we want  
 
 Now that we have the data downloaded and its formatting changed, we are ready to extract the sequences we want for this tree. Today we're going to be making a gene tree for the Sonic Hedgehog gene. Yes, this is a real thing. You can read about it if you like (https://ghr.nlm.nih.gov/gene/SHH#synonyms), but it is important in development so we know all of these rodents will have at least one version.  
 
@@ -63,7 +63,7 @@ Take a look at one of these files. There is a lot of information in each of the 
 **Question 3:** When you have all of your headers edited appropriately, combine all of those files together. The file you end up with should be a single fasta file with all of the sequences for the sonic hedgehog gene, and all of the headers simple and informative. Paste in the code you used to do this.  
 
 
-#### Aligning the sequences and making the tree  
+### Aligning the sequences and making the tree  
 
 We'll use mafft again with the default settings for the multiple sequence alignment. Put your own input and output file names in the appropriate places.  
 
@@ -80,7 +80,7 @@ And finally, we will use a program called iqtree to make the tree. Iqtree has a 
     iqtree -s input -m LG -bb 1000 -pre output  
 
 
-#### Viewing the tree  
+### Viewing the tree  
 
 One of the files iqtree produces has "contree" at the end of it. Cat this file onto the screen, and copy everything you see including all the strange looking punctuation.    
 
