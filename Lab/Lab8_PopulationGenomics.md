@@ -84,7 +84,7 @@ denovo_map.pl -T 24 -M 6 -o ./stacks_out/ --samples ./processed_reads/ --popmap 
 
 If I am being honest, I mostly made you do that because I am petty. I had to figure out what was going on, so you had to at least see what happened.
 
-SO I GUESS WE NOW HAVE TO FIX THE DAMN READ NAMES. FINE.
+So I guess we have to fix the read names. Fine. 
 
 First off, it makes a bunch of empty fastq files. Just delete those `rm processed_reads/*fastq`. Now a bit of code to rename all the gzipped files.
 
